@@ -52,7 +52,6 @@ const ButtonGroup = styled.div`
   gap: 10px;
 `;
 
-
 const Result = () => {
   const [resultData, setResultData] = useState({});
   const [searchParams] = useSearchParams();
@@ -85,7 +84,7 @@ const Result = () => {
           >
             테스트 다시 시작하기
           </Button>
-          <KakaoShareButton />
+          <KakaoShareButton data={resultData} />
         </ButtonGroup>
       </Contents>
     </Wrapper>
