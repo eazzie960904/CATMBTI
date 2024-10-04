@@ -37,6 +37,28 @@ const ButtonGroup = styled.div`
     border: 1px solid skyblue;
     color: #000;
   }
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    & > button {
+      width: 300px;
+      height: 150px;
+      font-size: 18px;
+      background: #eee;
+      border: 1px solid skyblue;
+      color: #000;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+    & > button {
+      width: 200px;
+      height: 100px;
+      font-size: 16px;
+      background: #eee;
+      border: 1px solid skyblue;
+      color: #000;
+    }
+  }
 `;
 
 const Question = () => {
